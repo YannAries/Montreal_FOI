@@ -1,10 +1,9 @@
-[![Stories in Ready](https://badge.waffle.io/codeforhawaii/uipa_org.png?label=ready&title=Ready)](https://waffle.io/codeforhawaii/uipa_org)
+![Stories in Ready](https://badge.waffle.io/codeforhawaii/uipa_org.png?label=ready&title=Ready)](https://waffle.io/codeforhawaii/uipa_org)
+![Coverage Status](https://coveralls.io/repos/github/YannAries/Montreal_FOI/badge.svg?branch=master)](https://coveralls.io/github/YannAries/Montreal_FOI?branch=master)
 
-# UIPA.org - Uniform Information Practices Act portal
+# Montréal_FOI - Access to Information Portal
 
-This is a basic Django project with a theme app that plugs into
-[Froide](https://github.com/stefanw/froide). It's based on the [Froide Base
-Theme](https://github.com/okfde/froide-theme).
+This is a basic Django project with a theme app that plugs into [Froide](https://github.com/stefanw/froide). It's based on the [Froide Base Theme](https://github.com/okfde/froide-theme) and [UIPA.org customized theme](https://github.com/CodeforHawaii/uipa_org).
 
 ## Get started easily
 
@@ -15,14 +14,71 @@ Prerequisite libraries and programs:
 
 In a Python virtualenv, run:
 
-    pip install -r requirements.txt -e . --src=./src
-    python manage.py migrate  --noinput
-    python manage.py createsuperuser
-    python manage.py loaddata uipa_org/fixtures/*
-    python manage.py runserver
+1. Add the --user option (if necessary) to install without needing root permissions
 
-At this point, visit http://127.0.0.1:8000/ in your browser and you should see
-the home page for uipa.org.
+  ```
+pip install --user -r requirements.txt -e . --src=./src
+ ```
+
+2. Upgrade pip to the latest version
+
+ ```
+pip install --upgrade pip
+ ```
+
+3. Change directory to src
+
+ ```
+cd src
+```
+
+4. Export the key into ```setting.py``` file
+ 
+ ```
+export SECRET_KEY= (name of the key)
+ ```
+
+5. Print the key
+ 
+ ```
+echo $SECRET_KEY
+ ```
+
+6. Back to the main directory
+ 
+ ```
+cd ..
+ ```
+
+07. Migrate the database and do not prompt for any input
+
+  ```
+python manage.py migrate  --noinput
+  ```
+
+08. Create a superuser
+
+ ```
+python manage.py createsuperuser
+ ```
+
+09. Load the fixtures
+
+ ```
+python manage.py loaddata uipa_org/fixtures/*
+ ```
+
+10. Compress the files
+
+ ```
+python manage.py compress
+ ```
+
+11. Start the development server and visit http://127.0.0.1:8000/ in your browser
+
+ ```
+python manage.py runserver
+ ```
 
 Be sure to remember the password for the admin user you create so that you can
 log on to the admin interface at http://127.0.0.1:8000/uipa-admin/. You can
@@ -127,3 +183,5 @@ fixtures/about-page.json:
 ## License
 
 Froide Theme is licensed under the MIT License.
+
+UIPA.org Theme is licensed under the MIT License.
