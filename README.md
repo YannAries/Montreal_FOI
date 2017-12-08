@@ -1,5 +1,5 @@
 ![Stories in Ready](https://badge.waffle.io/codeforhawaii/uipa_org.png?label=ready&title=Ready)](https://waffle.io/codeforhawaii/uipa_org)
-![Coverage Status](https://coveralls.io/repos/github/YannAries/Montreal_FOI/badge.svg?branch=master)](https://coveralls.io/github/YannAries/Montreal_FOI?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/YannAries/Montreal_FOI/badge.png?branch=master)](https://coveralls.io/github/YannAries/Montreal_FOI?branch=master)
 
 # Montréal_FOI - Access to Information Portal
 
