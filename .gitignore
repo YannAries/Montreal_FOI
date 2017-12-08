@@ -115,3 +115,4 @@ src
 
 # Badge track code coverage
 .coveralls.yml
+.travis.yml
