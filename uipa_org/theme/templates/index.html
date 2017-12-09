@@ -1,7 +1,7 @@
 {% overextends "index.html" %}
 {% load i18n %}
 
-{% block title %}{{ SITE_NAME }}: Expanding Hawaii's public access one request at a time{% endblock %}
+<!-- {% block title %}{{ SITE_NAME }}: Expanding Hawaii's public access one request at a time{% endblock %} -->
 
 {% block site_description %}
 <p>
@@ -43,12 +43,12 @@
 {% endblock index-search %}
 
 {% block index_sub_left %}
-    <h3>{% blocktrans %}<em>What is the Act Respecting Access to Documents Held by Public Bodies and the Protection of Personal Information?</em>{% endblocktrans %}</h3>
+    <h4>{% blocktrans %}<em>What is the Act Respecting Access to Documents Held by Public Bodies and the Protection of Personal Information?</em>{% endblocktrans %}</h4>
     <p>{% blocktrans %}Definition goes here.{% endblocktrans %}</p>
 {% endblock %}
 
 {% block index_sub_right %}
-    <h3>{% blocktrans %}<em>About Montreal FOI?</em>{% endblocktrans %}</h3>
+    <h4>{% blocktrans %}<em>About Montreal FOI?</em>{% endblocktrans %}</h4>
     <p>{% blocktrans %}Definition goes here.{% endblocktrans %}
         <br/><br/>
         <a href="{% url 'help-faq' %}">{% blocktrans %}Frequently Asked Questions{% endblocktrans %}</a>
